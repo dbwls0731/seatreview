@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media screen and (min-width: 1024px) {
+        /* CSS for screens wider than 1024px */
+        .cross {
+          display: none;
+        }
+      }
+    </style>
+    <style>
+        .cross {
+            background: none;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            padding: 7px 15px 0px 15px;
+            color: #999;
+            border: 0;
+            font-size: 3em;
+            line-height: 65px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            z-index: 10000000000000;
+        }
+    </style>
+
+<body>
+    <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="home.html">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <button class="cross">&#735;</button>
+        </div>
+        <div class="navbar-menu is-active">
+            <div class="navbar-item">
+                <div class="select">
+                    <select>
+                        <option value="별점">별점</option>
+                        <option value="높은순">높은순</option>
+                        <option value="낮은순">낮은순</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select>
+                        <option value="키">키</option>
+                        <option value="101~110">101~110</option>
+                        <option value="111~120">111~120</option>
+                        <option value="121~130">121~130</option>
+                        <option value="131~140">131~140</option>
+                        <option value="141~150">141~150</option>
+                        <option value="151~160">151~160</option>
+                        <option value="161~170">161~170</option>
+                        <option value="171~180">171~180</option>
+                        <option value="181~190">181~190</option>
+                        <option value="191~200">171~180</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <button onclick="openModal();" class="button is-primary is-inverted">
+                        검색
+                    </button>
+                    <div class="modal" id="modal1">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title">검색</p>
+                                <button class="delete" aria-label="close"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                <input class="input is-rounded is-primary" type="search"
+                                    placeholder="#168 #메가박스 #부산대 #컴포트 #3관 #2D">
+                            </section>
+                            <footer class="modal-card-foot">
+                                <button class="button is-primary">검색</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-primary is-inverted" href="review.html">
+                        <span>업로드</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="columns is-multiline is-mobile">
+        <div class="column is-full">
+        </div>
+        <div class="column is-full">
+        </div>
+        <div class="column is-full">
+        </div>
+        <div class="column is-full">
+        </div>
+        <div class="column is-full">
+        </div>
+        <div class="column is-full">
+        </div>
+        <div
+            class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">E-10/*****</p>
+                            <p class="subtitle is-6">#169</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">E-13</p>
+                            <p class="subtitle is-6">#173</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">E-7</p>
+                            <p class="subtitle is-6">#148</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">D-10</p>
+                            <p class="subtitle is-6">#180</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">D-7</p>
+                            <p class="subtitle is-6">#163</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">A-7</p>
+                            <p class="subtitle is-6">#177</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'></script>
+    <script>
+        // Function for opening the modal
+        function openModal() {
+            // is-active class of the modal
+            document.getElementById("modal1").classList.add("is-active");
+            
+        }
+        // Adding event listeners for closing the modal
+        document.querySelectorAll(
+            ".modal-background, .modal-close," +
+            ".modal-card-head .delete,.modal-card-foot .button"
+        )
+            .forEach(($el) => {
+                const $modal = $el.closest(".modal");
+
+                $el.addEventListener("click", () => {
+                    // removing is-active class from modal
+                    $modal.classList.remove("is-active");
+                    
+                });
+            });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+
+            $(".cross").hide();
+
+            $(".navbar-burger").click(function () {
+                $("#menu").slideToggle("slow", function () {
+                    $(".navbar-burger").hide();
+                    $(".cross").show();
+                });
+            });
+
+            $(".cross").click(function () {
+                $("#menu").slideToggle("slow", function () {
+                    $(".cross").hide();
+                    $(".navbar-burger").show();
+                });
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
